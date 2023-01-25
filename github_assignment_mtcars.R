@@ -13,5 +13,7 @@ mtcars %>%
   ggplot +
   geom_point(aes(mpg, disp)) +
   labs(x = "Miles/(US) gallon",
-       y = "Displacement (cu.in.)")
+       y = "Displacement (cu.in.)") +
+  ggtitle("Relationship between Miles and Displacement") +
+  theme_bw()
 
