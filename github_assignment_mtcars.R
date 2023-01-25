@@ -11,9 +11,9 @@ data(mtcars)
 #making a scatter plot
 mtcars %>% 
   ggplot +
-  geom_point(aes(mpg, disp)) +
+  geom_point(aes(mpg, disp, color = cyl)) +
   labs(x = "Miles/(US) gallon",
        y = "Displacement (cu.in.)") +
   ggtitle("Relationship between Miles and Displacement") +
-  theme_bw()
+  theme_bw() 
 
