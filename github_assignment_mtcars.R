@@ -10,6 +10,7 @@ data(mtcars)
 
 #making a scatter plot
 mtcars %>% 
+  filter(hp > 100) %>% 
   ggplot +
   geom_point(aes(mpg, disp, color = cyl)) +
   labs(x = "Miles/(US) gallon",
