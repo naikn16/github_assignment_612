@@ -12,5 +12,6 @@ data(mtcars)
 mtcars %>% 
   ggplot +
   geom_point(aes(mpg, disp)) +
-  
+  labs(x = "Miles/(US) gallon",
+       y = "Displacement (cu.in.)")
 
